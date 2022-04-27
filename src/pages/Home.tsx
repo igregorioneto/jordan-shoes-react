@@ -1,9 +1,23 @@
 import wallpaper from '../assets/images/wallpaper.jpeg';
+import { Shoes } from '../components/Shoes';
+
 import shoes from '../assets/images/1.png';
 
 import '../styles/home.scss';
 
 export function Home() {
+    let listShoes: string[] = [
+        'src/assets/images/1.png',
+        'src/assets/images/2.png',
+        'src/assets/images/3.png',
+        'src/assets/images/4.png',
+        'src/assets/images/5.png',
+        'src/assets/images/6.png',
+        'src/assets/images/7.png',
+        'src/assets/images/8.png',
+    ];
+
+    console.log(listShoes[0])
     return (
         <div id="page-home">
             <header>
@@ -32,36 +46,9 @@ export function Home() {
                         <h2>Destaques</h2>
                         <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
                     </div>
-                    <div className="shoes-listing">
-                        <div className="shoes">
-                            <img src={shoes} alt="Tênis do Jordan" />
-                        </div>
-                    </div>
-                    <div className="shoes-listing">
-                        <div className="shoes">
-                            <img src={shoes} alt="Tênis do Jordan" />
-                        </div>
-                    </div>
-                    <div className="shoes-listing">
-                        <div className="shoes">
-                            <img src={shoes} alt="Tênis do Jordan" />
-                        </div>
-                    </div>
-                    <div className="shoes-listing">
-                        <div className="shoes">
-                            <img src={shoes} alt="Tênis do Jordan" />
-                        </div>
-                    </div>
-                    <div className="shoes-listing">
-                        <div className="shoes">
-                            <img src={shoes} alt="Tênis do Jordan" />
-                        </div>
-                    </div>
-                    <div className="shoes-listing">
-                        <div className="shoes">
-                            <img src={shoes} alt="Tênis do Jordan" />
-                        </div>
-                    </div>
+
+                    <Shoes shoes={listShoes[0]} />
+                    
                 </div>
             </main>
         </div>
