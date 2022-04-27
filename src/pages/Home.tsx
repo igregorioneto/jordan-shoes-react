@@ -47,8 +47,14 @@ export function Home() {
                         <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
                     </div>
 
-                    <Shoes shoes={listShoes[0]} />
-                    
+                    <Shoes shoes={shoes} />
+                    <Shoes shoes={shoes} />
+                    <Shoes shoes={shoes} />
+                    <Shoes shoes={shoes} />
+                    <Shoes shoes={shoes} />
+                    <Shoes shoes={shoes} />
+                    <Shoes shoes={shoes} />
+                    <Shoes shoes={shoes} />
                 </div>
             </main>
         </div>
